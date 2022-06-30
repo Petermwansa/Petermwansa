@@ -1,0 +1,24 @@
+body {
+    background: rgb(2, 0, 34);
+    color: antiquewhite;
+    cursor: grab;
+}
+
+
+  
+#cursor {
+    height: 80px;
+    width: 80px;
+    background: antiquewhite;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+div:hover ~ #cursor {
+    transform: scale(0.5);
+}
